@@ -125,11 +125,6 @@ img {
   padding-bottom: 20px;
 }
 
-.header .header-style {
-  display: flex;
-  align-items: center;
-}
-
 .header-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -144,17 +139,35 @@ img {
 }
 
 .header-right .tel-style {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 .tel-style .header-tel {
   display: flex;
+  align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  fill: var(--primary-text-color);
+}
+
+.tel-style .header-tel:hover,
+.tel-style .header-tel:focus {
+  fill: var(--blue-text-color);
 }
 
 .tel-style:last-child {
   margin-right: 0;
+}
+
+.header-right-icon {
+  display: block;
+  align-items: center;
+}
+
+.smartphone-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
 }
 
 /* Унікальність сторінки studio*/
@@ -200,6 +213,8 @@ img {
   margin-top: 0px;
   margin-left: 485px;
   margin-right: 485px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .first-section-img {
@@ -239,6 +254,13 @@ img {
 .second-list-item {
   width: 270px;
   margin-right: 30px;
+}
+
+.second-list-item .thumb {
+  background-color: #f5f4fa;
+  align-items: center;
+  padding: 25px 100px;
+  margin-bottom: 30px;
 }
 
 .second-list-item .title {
@@ -359,6 +381,9 @@ img {
   display: inline-block;
   width: 270px;
   margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .four-list-item .text-block {
@@ -400,6 +425,125 @@ img {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+
+.social-networks-list {
+  list-style: none;
+  display: flex;
+  margin-bottom: 0;
+  margin-top: 0;
+  justify-content: center;
+  padding: 0;
+}
+
+.social-networks-item {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  color: #afb1b8;
+  border-radius: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.social-networks-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.network-icon {
+  display: flex;
+  fill: #afb1b8;
+}
+
+.network-icon:hover {
+  fill: #ffffff;
+}
+
+.networks-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.networks-link:hover .network-icon,
+.networks-link:focus .network-icon {
+  fill: #fff;
+}
+
+.networks-link:hover,
+.networks-link:focus {
+  background-color: var(--blue-text-color);
+}
+
+.five-section {
+  margin-bottom: 0px;
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.five-section-title {
+  color: var(--title-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.customers-list {
+  list-style: none;
+  display: flex;
+  margin-bottom: 0;
+  margin-top: 0;
+  justify-content: center;
+  padding: 0;
+}
+
+.cusromer-link {
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+  padding: 16px 32px;
+  display: flex;
+}
+
+.customers-item {
+  margin-right: 30px;
+  display: flex;
+}
+
+.customers-item:nth-child(6n) {
+  margin-right: 0;
+}
+
+.cusromer-icon {
+  display: flex;
+  fill: #afb1b8;
+}
+
+.cusromer-icon:hover {
+  fill: var(--blue-text-color);
+  cursor: pointer;
+}
+
+.cusromer-link:hover {
+  border-color: var(--blue-text-color);
+}
+
+.cusromer-link:hover .cusromer-icon,
+.cusromer-link:focus .cusromer-icon {
+  fill: var(--blue-text-color);
 }
 
 /* Підвал сторінки studio*/
@@ -433,6 +577,24 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.join-block {
+  outline: 2px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.join-block-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 /* Шапка сторінки portfolio */
@@ -474,7 +636,7 @@ img {
 .page-header .header-right {
   display: flex;
   align-items: center;
-  margin-left: 327px;
+  margin-left: auto;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
