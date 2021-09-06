@@ -208,13 +208,14 @@ img {
   min-width: 200px;
 
   display: inline-block;
-  border-radius: 4px;
   padding: 10px;
   margin-top: 0px;
   margin-left: 485px;
   margin-right: 485px;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
 }
 
 .first-section-img {
@@ -241,6 +242,7 @@ img {
 .first-section .btn:focus {
   color: var(--blue-text-color);
   background-color: var(--secondary-text-color);
+  border: none;
 }
 
 .second-section {
@@ -581,9 +583,58 @@ img {
 
 .join-block {
   outline: 2px solid green;
+  align-items: center;
+  justify-content: center;
+  padding-top: 18px;
+}
+
+.join-block-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+
+  display: flex;
+}
+
+.join-block-list {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.join-block-item {
+  margin-right: 10px;
+}
+
+.join-block-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.join-block-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.join-block-link:hover,
+.join-block-link:focus {
+  background-color: var(--blue-text-color);
+}
+
+.join-block-link:hover .network-icon,
+.join-block-link:focus .network-icon {
+  fill: #fff;
+}
+
+.network-join-icon {
+  display: flex;
+  fill: #fff;
 }
 
 .join-block-text {
@@ -595,6 +646,19 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #fff;
+
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.footer-left {
+  margin-right: 70px;
+  outline: 2px solid green;
+}
+
+.footer {
+  display: flex;
 }
 
 /* Шапка сторінки portfolio */
@@ -648,12 +712,30 @@ img {
 
 .tel-style-portfolio .header-tel {
   display: flex;
+  align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  fill: var(--primary-text-color);
+}
+
+.tel-style-portfolio .header-tel:hover,
+.tel-style-portfolio .header-tel:focus {
+  fill: var(--blue-text-color);
 }
 
 .tel-style-portfolio:last-child {
   margin-right: 0;
+}
+
+.smartphone-icon-portfolio {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.tel-style-portfolio:hover,
+.tel-style-portfolio:focus {
+  fill: var(--blue-text-color);
 }
 
 /* Унікальність сторінки portfolio */
@@ -692,6 +774,13 @@ img {
   border-radius: 4px;
 }
 
+.first-section-portfolio .btn:hover,
+.first-section-portfolio .btn:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: none;
+}
+
 .pointer {
   cursor: pointer;
 }
@@ -725,6 +814,12 @@ img {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.first-section-portfolio .second-list-element:hover,
+.first-section-portfolio .second-list-element:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .first-section-portfolio .second-list-element:nth-child(3n) {
@@ -778,4 +873,13 @@ img {
 .page-footer-portfolio .footer-tel {
   display: inline-block;
   margin-top: 9px;
+}
+
+.footer-portfolio {
+  display: flex;
+}
+
+.footer-left-portfolio {
+  margin-right: 70px;
+  outline: 2px solid green;
 }
