@@ -167,7 +167,6 @@ img {
 .smartphone-icon {
   display: flex;
   align-items: center;
-  margin-right: 10px;
 }
 
 /* Унікальність сторінки studio*/
@@ -260,7 +259,6 @@ img {
 
 .second-list-item .thumb {
   background-color: #f5f4fa;
-  align-items: center;
   margin-bottom: 30px;
   height: 120px;
 
